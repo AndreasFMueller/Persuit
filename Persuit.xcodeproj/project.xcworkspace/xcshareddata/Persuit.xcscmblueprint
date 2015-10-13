@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "a9c49bf6-ab72-11df-a12e-4d077591bc46",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "a9c49bf6-ab72-11df-a12e-4d077591bc46" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "a9c49bf6-ab72-11df-a12e-4d077591bc46" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "184B7C4C-BD24-4703-B6BC-7CF0BC4B8485",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "a9c49bf6-ab72-11df-a12e-4d077591bc46" : "Projects\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Persuit",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "HSR\/persuit\/Persuit\/Persuit.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/subversion.othello.ch\/svn\/projects",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "a9c49bf6-ab72-11df-a12e-4d077591bc46"
+    }
+  ]
+}
