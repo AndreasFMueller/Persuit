@@ -46,14 +46,14 @@
 			containerPortal = 90C61FF11BB2680100066667 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 90C61FF81BB2680100066667;
-			remoteInfo = Persuit;
+			remoteInfo = Pursuit;
 		};
 		90C6201E1BB2680200066667 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 90C61FF11BB2680100066667 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 90C61FF81BB2680100066667;
-			remoteInfo = Persuit;
+			remoteInfo = Pursuit;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -315,7 +315,7 @@
 			dependencies = (
 			);
 			name = Pursuit;
-			productName = Persuit;
+			productName = Pursuit;
 			productReference = 90C61FF91BB2680100066667 /* Pursuit.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -333,7 +333,7 @@
 				90C620141BB2680200066667 /* PBXTargetDependency */,
 			);
 			name = PursuitTests;
-			productName = PersuitTests;
+			productName = PursuitTests;
 			productReference = 90C620121BB2680200066667 /* Pursuit.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -351,7 +351,7 @@
 				90C6201F1BB2680200066667 /* PBXTargetDependency */,
 			);
 			name = PursuitUITests;
-			productName = PersuitUITests;
+			productName = PursuitUITests;
 			productReference = 90C6201D1BB2680200066667 /* Pursuit.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
@@ -621,9 +621,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = PersuitTests/Info.plist;
+				INFOPLIST_FILE = PursuitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ch.othello.PersuitTests;
+				PRODUCT_BUNDLE_IDENTIFIER = ch.othello.PursuitTests;
 				PRODUCT_NAME = Pursuit;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pursuit.app/Pursuit";
 			};
@@ -633,9 +633,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = PersuitTests/Info.plist;
+				INFOPLIST_FILE = PursuitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ch.othello.PersuitTests;
+				PRODUCT_BUNDLE_IDENTIFIER = ch.othello.PursuitTests;
 				PRODUCT_NAME = Pursuit;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pursuit.app/Pursuit";
 			};
@@ -644,11 +644,11 @@
 		90C6202D1BB2680200066667 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = PersuitUITests/Info.plist;
+				INFOPLIST_FILE = PursuitUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ch.othello.PersuitUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = ch.othello.PursuitUITests;
 				PRODUCT_NAME = Pursuit;
-				TEST_TARGET_NAME = Persuit;
+				TEST_TARGET_NAME = Pursuit;
 				USES_XCTRUNNER = YES;
 			};
 			name = Debug;
@@ -656,11 +656,11 @@
 		90C6202E1BB2680200066667 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = PersuitUITests/Info.plist;
+				INFOPLIST_FILE = PursuitUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ch.othello.PersuitUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = ch.othello.PursuitUITests;
 				PRODUCT_NAME = Pursuit;
-				TEST_TARGET_NAME = Persuit;
+				TEST_TARGET_NAME = Pursuit;
 				USES_XCTRUNNER = YES;
 			};
 			name = Release;
