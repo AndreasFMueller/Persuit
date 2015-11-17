@@ -1,2 +1,2 @@
-# Persuit
-Demo App illustrating persuit curves
+# Pursuit
+Demo App illustrating pursuit curves

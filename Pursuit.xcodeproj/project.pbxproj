@@ -1,0 +1,713 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		907C466E1BC908A900363B9D /* PursuitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 907C466D1BC908A900363B9D /* PursuitView.m */; };
+		907C46711BC95A0600363B9D /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907C46701BC95A0600363B9D /* MainController.m */; };
+		907C46741BCACAD100363B9D /* Pursuit.m in Sources */ = {isa = PBXBuildFile; fileRef = 907C46731BCACAD100363B9D /* Pursuit.m */; };
+		907C46771BCADBC800363B9D /* ExternalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907C46761BCADBC800363B9D /* ExternalViewController.m */; };
+		907C467A1BCAE37D00363B9D /* ScreenTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907C46791BCAE37D00363B9D /* ScreenTableViewController.m */; };
+		9099C0C51BCCF5B500729C9F /* UpdaterBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9099C0C41BCCF5B500729C9F /* UpdaterBase.m */; };
+		9099C0C81BCCF64A00729C9F /* LissajousUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = 9099C0C71BCCF64A00729C9F /* LissajousUpdater.m */; };
+		9099C0CC1BCCF9E300729C9F /* TouchUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = 9099C0CB1BCCF9E300729C9F /* TouchUpdater.m */; };
+		9099C0CF1BCCFACF00729C9F /* RandomUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = 9099C0CE1BCCFACF00729C9F /* RandomUpdater.m */; };
+		9099C0D71BCD24A000729C9F /* PolygonUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = 9099C0D61BCD24A000729C9F /* PolygonUpdater.m */; };
+		9099C0DA1BCD313800729C9F /* UpdaterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9099C0D91BCD313800729C9F /* UpdaterTableViewController.m */; };
+		9099C0E31BCD4AEC00729C9F /* UpdaterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9099C0E21BCD4AEC00729C9F /* UpdaterController.m */; };
+		9099C0E61BCD4B6300729C9F /* UpdaterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9099C0E51BCD4B6300729C9F /* UpdaterView.m */; };
+		9099C0E91BCD549000729C9F /* LissajousUpdaterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9099C0E81BCD549000729C9F /* LissajousUpdaterView.m */; };
+		9099C0EC1BCD553C00729C9F /* LissajousUpdaterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9099C0EB1BCD553C00729C9F /* LissajousUpdaterController.m */; };
+		90C61FFE1BB2680100066667 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C61FFD1BB2680100066667 /* main.m */; };
+		90C620011BB2680100066667 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C620001BB2680100066667 /* AppDelegate.m */; };
+		90C620041BB2680100066667 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C620031BB2680100066667 /* ViewController.m */; };
+		90C620071BB2680100066667 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90C620051BB2680100066667 /* Main.storyboard */; };
+		90C620091BB2680100066667 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90C620081BB2680100066667 /* Assets.xcassets */; };
+		90C6200C1BB2680100066667 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90C6200A1BB2680100066667 /* LaunchScreen.storyboard */; };
+		90C620171BB2680200066667 /* PursuitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C620161BB2680200066667 /* PursuitTests.m */; };
+		90C620221BB2680200066667 /* PursuitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C620211BB2680200066667 /* PursuitUITests.m */; };
+		90C620331BB268E100066667 /* Curve.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C620321BB268E100066667 /* Curve.m */; };
+		90C620361BB26A2F00066667 /* PursuitState.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C620351BB26A2F00066667 /* PursuitState.m */; };
+		90F28C151BCD751E0082BABB /* TouchUpdaterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F28C141BCD751E0082BABB /* TouchUpdaterController.m */; };
+		90F28C181BCD75460082BABB /* TouchUpdaterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F28C171BCD75460082BABB /* TouchUpdaterView.m */; };
+		90F28C1C1BCD78900082BABB /* RandomUpdaterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F28C1B1BCD78900082BABB /* RandomUpdaterView.m */; };
+		90F28C1F1BCD78B60082BABB /* RandomUpdaterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F28C1E1BCD78B60082BABB /* RandomUpdaterController.m */; };
+		90F28C231BCD7F0B0082BABB /* PolygonUpdaterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F28C221BCD7F0B0082BABB /* PolygonUpdaterController.m */; };
+		90F28C261BCD7F300082BABB /* PolygonUpdaterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F28C251BCD7F300082BABB /* PolygonUpdaterView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		90C620131BB2680200066667 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90C61FF11BB2680100066667 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90C61FF81BB2680100066667;
+			remoteInfo = Persuit;
+		};
+		90C6201E1BB2680200066667 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90C61FF11BB2680100066667 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90C61FF81BB2680100066667;
+			remoteInfo = Persuit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		907C466D1BC908A900363B9D /* PursuitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PursuitView.m; sourceTree = "<group>"; };
+		907C466F1BC95A0600363B9D /* MainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
+		907C46701BC95A0600363B9D /* MainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
+		907C46721BCACAD100363B9D /* Pursuit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pursuit.h; sourceTree = "<group>"; };
+		907C46731BCACAD100363B9D /* Pursuit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pursuit.m; sourceTree = "<group>"; };
+		907C46751BCADBC800363B9D /* ExternalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExternalViewController.h; sourceTree = "<group>"; };
+		907C46761BCADBC800363B9D /* ExternalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExternalViewController.m; sourceTree = "<group>"; };
+		907C46781BCAE37D00363B9D /* ScreenTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenTableViewController.h; sourceTree = "<group>"; };
+		907C46791BCAE37D00363B9D /* ScreenTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenTableViewController.m; sourceTree = "<group>"; };
+		9099C0C31BCCF5B500729C9F /* UpdaterBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdaterBase.h; sourceTree = "<group>"; };
+		9099C0C41BCCF5B500729C9F /* UpdaterBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdaterBase.m; sourceTree = "<group>"; };
+		9099C0C61BCCF64A00729C9F /* LissajousUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LissajousUpdater.h; sourceTree = "<group>"; };
+		9099C0C71BCCF64A00729C9F /* LissajousUpdater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LissajousUpdater.m; sourceTree = "<group>"; };
+		9099C0CA1BCCF9E300729C9F /* TouchUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchUpdater.h; sourceTree = "<group>"; };
+		9099C0CB1BCCF9E300729C9F /* TouchUpdater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchUpdater.m; sourceTree = "<group>"; };
+		9099C0CD1BCCFACF00729C9F /* RandomUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomUpdater.h; sourceTree = "<group>"; };
+		9099C0CE1BCCFACF00729C9F /* RandomUpdater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomUpdater.m; sourceTree = "<group>"; };
+		9099C0D11BCD1D2100729C9F /* PursuitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PursuitView.h; sourceTree = "<group>"; };
+		9099C0D21BCD1D4B00729C9F /* TouchDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchDelegate.h; sourceTree = "<group>"; };
+		9099C0D51BCD24A000729C9F /* PolygonUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolygonUpdater.h; sourceTree = "<group>"; };
+		9099C0D61BCD24A000729C9F /* PolygonUpdater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolygonUpdater.m; sourceTree = "<group>"; };
+		9099C0D81BCD313800729C9F /* UpdaterTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdaterTableViewController.h; sourceTree = "<group>"; };
+		9099C0D91BCD313800729C9F /* UpdaterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdaterTableViewController.m; sourceTree = "<group>"; };
+		9099C0DE1BCD399000729C9F /* UpdaterSelectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdaterSelectionDelegate.h; sourceTree = "<group>"; };
+		9099C0E11BCD4AEC00729C9F /* UpdaterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdaterController.h; sourceTree = "<group>"; };
+		9099C0E21BCD4AEC00729C9F /* UpdaterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdaterController.m; sourceTree = "<group>"; };
+		9099C0E41BCD4B6300729C9F /* UpdaterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdaterView.h; sourceTree = "<group>"; };
+		9099C0E51BCD4B6300729C9F /* UpdaterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdaterView.m; sourceTree = "<group>"; };
+		9099C0E71BCD549000729C9F /* LissajousUpdaterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LissajousUpdaterView.h; sourceTree = "<group>"; };
+		9099C0E81BCD549000729C9F /* LissajousUpdaterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LissajousUpdaterView.m; sourceTree = "<group>"; };
+		9099C0EA1BCD553C00729C9F /* LissajousUpdaterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LissajousUpdaterController.h; sourceTree = "<group>"; };
+		9099C0EB1BCD553C00729C9F /* LissajousUpdaterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LissajousUpdaterController.m; sourceTree = "<group>"; };
+		90C61FF91BB2680100066667 /* Pursuit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pursuit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		90C61FFD1BB2680100066667 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		90C61FFF1BB2680100066667 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		90C620001BB2680100066667 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		90C620021BB2680100066667 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		90C620031BB2680100066667 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		90C620061BB2680100066667 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		90C620081BB2680100066667 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		90C6200B1BB2680100066667 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		90C6200D1BB2680100066667 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90C620121BB2680200066667 /* Pursuit.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Pursuit.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		90C620161BB2680200066667 /* PursuitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PursuitTests.m; sourceTree = "<group>"; };
+		90C620181BB2680200066667 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90C6201D1BB2680200066667 /* Pursuit.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Pursuit.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		90C620211BB2680200066667 /* PursuitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PursuitUITests.m; sourceTree = "<group>"; };
+		90C620231BB2680200066667 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90C620311BB268E100066667 /* Curve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Curve.h; sourceTree = "<group>"; };
+		90C620321BB268E100066667 /* Curve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Curve.m; sourceTree = "<group>"; };
+		90C620341BB26A2F00066667 /* PursuitState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PursuitState.h; sourceTree = "<group>"; };
+		90C620351BB26A2F00066667 /* PursuitState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PursuitState.m; sourceTree = "<group>"; };
+		90F28C131BCD751E0082BABB /* TouchUpdaterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchUpdaterController.h; sourceTree = "<group>"; };
+		90F28C141BCD751E0082BABB /* TouchUpdaterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchUpdaterController.m; sourceTree = "<group>"; };
+		90F28C161BCD75460082BABB /* TouchUpdaterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchUpdaterView.h; sourceTree = "<group>"; };
+		90F28C171BCD75460082BABB /* TouchUpdaterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchUpdaterView.m; sourceTree = "<group>"; };
+		90F28C1A1BCD78900082BABB /* RandomUpdaterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomUpdaterView.h; sourceTree = "<group>"; };
+		90F28C1B1BCD78900082BABB /* RandomUpdaterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomUpdaterView.m; sourceTree = "<group>"; };
+		90F28C1D1BCD78B60082BABB /* RandomUpdaterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomUpdaterController.h; sourceTree = "<group>"; };
+		90F28C1E1BCD78B60082BABB /* RandomUpdaterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomUpdaterController.m; sourceTree = "<group>"; };
+		90F28C211BCD7F0B0082BABB /* PolygonUpdaterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolygonUpdaterController.h; sourceTree = "<group>"; };
+		90F28C221BCD7F0B0082BABB /* PolygonUpdaterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolygonUpdaterController.m; sourceTree = "<group>"; };
+		90F28C241BCD7F300082BABB /* PolygonUpdaterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolygonUpdaterView.h; sourceTree = "<group>"; };
+		90F28C251BCD7F300082BABB /* PolygonUpdaterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolygonUpdaterView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		90C61FF61BB2680100066667 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90C6200F1BB2680200066667 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90C6201A1BB2680200066667 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9099C0C91BCCF9C300729C9F /* Updaters */ = {
+			isa = PBXGroup;
+			children = (
+				9099C0C31BCCF5B500729C9F /* UpdaterBase.h */,
+				9099C0C41BCCF5B500729C9F /* UpdaterBase.m */,
+				9099C0E11BCD4AEC00729C9F /* UpdaterController.h */,
+				9099C0E21BCD4AEC00729C9F /* UpdaterController.m */,
+				9099C0E41BCD4B6300729C9F /* UpdaterView.h */,
+				9099C0E51BCD4B6300729C9F /* UpdaterView.m */,
+				90F28C121BCD72870082BABB /* Lissajous */,
+				90F28C191BCD755F0082BABB /* Touch */,
+				90F28C201BCD78C50082BABB /* Random */,
+				90F28C271BCD7F3E0082BABB /* Polygon */,
+				9099C0D81BCD313800729C9F /* UpdaterTableViewController.h */,
+				9099C0D91BCD313800729C9F /* UpdaterTableViewController.m */,
+				9099C0DE1BCD399000729C9F /* UpdaterSelectionDelegate.h */,
+			);
+			name = Updaters;
+			sourceTree = "<group>";
+		};
+		90C61FF01BB2680100066667 = {
+			isa = PBXGroup;
+			children = (
+				90C61FFB1BB2680100066667 /* Pursuit */,
+				90C620151BB2680200066667 /* PursuitTests */,
+				90C620201BB2680200066667 /* PursuitUITests */,
+				90C61FFA1BB2680100066667 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		90C61FFA1BB2680100066667 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90C61FF91BB2680100066667 /* Pursuit.app */,
+				90C620121BB2680200066667 /* Pursuit.xctest */,
+				90C6201D1BB2680200066667 /* Pursuit.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		90C61FFB1BB2680100066667 /* Pursuit */ = {
+			isa = PBXGroup;
+			children = (
+				907C46781BCAE37D00363B9D /* ScreenTableViewController.h */,
+				907C46791BCAE37D00363B9D /* ScreenTableViewController.m */,
+				90C61FFF1BB2680100066667 /* AppDelegate.h */,
+				90C620001BB2680100066667 /* AppDelegate.m */,
+				90C620021BB2680100066667 /* ViewController.h */,
+				90C620031BB2680100066667 /* ViewController.m */,
+				90C620051BB2680100066667 /* Main.storyboard */,
+				90C620081BB2680100066667 /* Assets.xcassets */,
+				90C6200A1BB2680100066667 /* LaunchScreen.storyboard */,
+				90C6200D1BB2680100066667 /* Info.plist */,
+				90C61FFC1BB2680100066667 /* Supporting Files */,
+				90C620311BB268E100066667 /* Curve.h */,
+				90C620321BB268E100066667 /* Curve.m */,
+				90C620341BB26A2F00066667 /* PursuitState.h */,
+				90C620351BB26A2F00066667 /* PursuitState.m */,
+				907C46721BCACAD100363B9D /* Pursuit.h */,
+				907C46731BCACAD100363B9D /* Pursuit.m */,
+				9099C0D11BCD1D2100729C9F /* PursuitView.h */,
+				907C466D1BC908A900363B9D /* PursuitView.m */,
+				907C466F1BC95A0600363B9D /* MainController.h */,
+				907C46701BC95A0600363B9D /* MainController.m */,
+				907C46751BCADBC800363B9D /* ExternalViewController.h */,
+				907C46761BCADBC800363B9D /* ExternalViewController.m */,
+				9099C0C91BCCF9C300729C9F /* Updaters */,
+				9099C0D21BCD1D4B00729C9F /* TouchDelegate.h */,
+			);
+			name = Pursuit;
+			path = Persuit;
+			sourceTree = "<group>";
+		};
+		90C61FFC1BB2680100066667 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				90C61FFD1BB2680100066667 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		90C620151BB2680200066667 /* PursuitTests */ = {
+			isa = PBXGroup;
+			children = (
+				90C620161BB2680200066667 /* PursuitTests.m */,
+				90C620181BB2680200066667 /* Info.plist */,
+			);
+			name = PursuitTests;
+			path = PersuitTests;
+			sourceTree = "<group>";
+		};
+		90C620201BB2680200066667 /* PursuitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				90C620211BB2680200066667 /* PursuitUITests.m */,
+				90C620231BB2680200066667 /* Info.plist */,
+			);
+			name = PursuitUITests;
+			path = PersuitUITests;
+			sourceTree = "<group>";
+		};
+		90F28C121BCD72870082BABB /* Lissajous */ = {
+			isa = PBXGroup;
+			children = (
+				9099C0C61BCCF64A00729C9F /* LissajousUpdater.h */,
+				9099C0C71BCCF64A00729C9F /* LissajousUpdater.m */,
+				9099C0E71BCD549000729C9F /* LissajousUpdaterView.h */,
+				9099C0E81BCD549000729C9F /* LissajousUpdaterView.m */,
+				9099C0EA1BCD553C00729C9F /* LissajousUpdaterController.h */,
+				9099C0EB1BCD553C00729C9F /* LissajousUpdaterController.m */,
+			);
+			name = Lissajous;
+			sourceTree = "<group>";
+		};
+		90F28C191BCD755F0082BABB /* Touch */ = {
+			isa = PBXGroup;
+			children = (
+				9099C0CA1BCCF9E300729C9F /* TouchUpdater.h */,
+				9099C0CB1BCCF9E300729C9F /* TouchUpdater.m */,
+				90F28C161BCD75460082BABB /* TouchUpdaterView.h */,
+				90F28C171BCD75460082BABB /* TouchUpdaterView.m */,
+				90F28C131BCD751E0082BABB /* TouchUpdaterController.h */,
+				90F28C141BCD751E0082BABB /* TouchUpdaterController.m */,
+			);
+			name = Touch;
+			sourceTree = "<group>";
+		};
+		90F28C201BCD78C50082BABB /* Random */ = {
+			isa = PBXGroup;
+			children = (
+				9099C0CD1BCCFACF00729C9F /* RandomUpdater.h */,
+				9099C0CE1BCCFACF00729C9F /* RandomUpdater.m */,
+				90F28C1A1BCD78900082BABB /* RandomUpdaterView.h */,
+				90F28C1B1BCD78900082BABB /* RandomUpdaterView.m */,
+				90F28C1D1BCD78B60082BABB /* RandomUpdaterController.h */,
+				90F28C1E1BCD78B60082BABB /* RandomUpdaterController.m */,
+			);
+			name = Random;
+			sourceTree = "<group>";
+		};
+		90F28C271BCD7F3E0082BABB /* Polygon */ = {
+			isa = PBXGroup;
+			children = (
+				9099C0D51BCD24A000729C9F /* PolygonUpdater.h */,
+				9099C0D61BCD24A000729C9F /* PolygonUpdater.m */,
+				90F28C241BCD7F300082BABB /* PolygonUpdaterView.h */,
+				90F28C251BCD7F300082BABB /* PolygonUpdaterView.m */,
+				90F28C211BCD7F0B0082BABB /* PolygonUpdaterController.h */,
+				90F28C221BCD7F0B0082BABB /* PolygonUpdaterController.m */,
+			);
+			name = Polygon;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		90C61FF81BB2680100066667 /* Pursuit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90C620261BB2680200066667 /* Build configuration list for PBXNativeTarget "Pursuit" */;
+			buildPhases = (
+				90C61FF51BB2680100066667 /* Sources */,
+				90C61FF61BB2680100066667 /* Frameworks */,
+				90C61FF71BB2680100066667 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pursuit;
+			productName = Persuit;
+			productReference = 90C61FF91BB2680100066667 /* Pursuit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		90C620111BB2680200066667 /* PursuitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90C620291BB2680200066667 /* Build configuration list for PBXNativeTarget "PursuitTests" */;
+			buildPhases = (
+				90C6200E1BB2680200066667 /* Sources */,
+				90C6200F1BB2680200066667 /* Frameworks */,
+				90C620101BB2680200066667 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				90C620141BB2680200066667 /* PBXTargetDependency */,
+			);
+			name = PursuitTests;
+			productName = PersuitTests;
+			productReference = 90C620121BB2680200066667 /* Pursuit.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		90C6201C1BB2680200066667 /* PursuitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90C6202C1BB2680200066667 /* Build configuration list for PBXNativeTarget "PursuitUITests" */;
+			buildPhases = (
+				90C620191BB2680200066667 /* Sources */,
+				90C6201A1BB2680200066667 /* Frameworks */,
+				90C6201B1BB2680200066667 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				90C6201F1BB2680200066667 /* PBXTargetDependency */,
+			);
+			name = PursuitUITests;
+			productName = PersuitUITests;
+			productReference = 90C6201D1BB2680200066667 /* Pursuit.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		90C61FF11BB2680100066667 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Andreas Müller";
+				TargetAttributes = {
+					90C61FF81BB2680100066667 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					90C620111BB2680200066667 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 90C61FF81BB2680100066667;
+					};
+					90C6201C1BB2680200066667 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 90C61FF81BB2680100066667;
+					};
+				};
+			};
+			buildConfigurationList = 90C61FF41BB2680100066667 /* Build configuration list for PBXProject "Pursuit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 90C61FF01BB2680100066667;
+			productRefGroup = 90C61FFA1BB2680100066667 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				90C61FF81BB2680100066667 /* Pursuit */,
+				90C620111BB2680200066667 /* PursuitTests */,
+				90C6201C1BB2680200066667 /* PursuitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		90C61FF71BB2680100066667 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90C6200C1BB2680100066667 /* LaunchScreen.storyboard in Resources */,
+				90C620091BB2680100066667 /* Assets.xcassets in Resources */,
+				90C620071BB2680100066667 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90C620101BB2680200066667 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90C6201B1BB2680200066667 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		90C61FF51BB2680100066667 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				907C46741BCACAD100363B9D /* Pursuit.m in Sources */,
+				9099C0EC1BCD553C00729C9F /* LissajousUpdaterController.m in Sources */,
+				9099C0E91BCD549000729C9F /* LissajousUpdaterView.m in Sources */,
+				90F28C261BCD7F300082BABB /* PolygonUpdaterView.m in Sources */,
+				9099C0E31BCD4AEC00729C9F /* UpdaterController.m in Sources */,
+				9099C0E61BCD4B6300729C9F /* UpdaterView.m in Sources */,
+				9099C0C51BCCF5B500729C9F /* UpdaterBase.m in Sources */,
+				9099C0D71BCD24A000729C9F /* PolygonUpdater.m in Sources */,
+				9099C0DA1BCD313800729C9F /* UpdaterTableViewController.m in Sources */,
+				90F28C181BCD75460082BABB /* TouchUpdaterView.m in Sources */,
+				90C620361BB26A2F00066667 /* PursuitState.m in Sources */,
+				9099C0C81BCCF64A00729C9F /* LissajousUpdater.m in Sources */,
+				907C46771BCADBC800363B9D /* ExternalViewController.m in Sources */,
+				907C466E1BC908A900363B9D /* PursuitView.m in Sources */,
+				90F28C231BCD7F0B0082BABB /* PolygonUpdaterController.m in Sources */,
+				90C620041BB2680100066667 /* ViewController.m in Sources */,
+				90F28C1F1BCD78B60082BABB /* RandomUpdaterController.m in Sources */,
+				907C467A1BCAE37D00363B9D /* ScreenTableViewController.m in Sources */,
+				90C620011BB2680100066667 /* AppDelegate.m in Sources */,
+				90C61FFE1BB2680100066667 /* main.m in Sources */,
+				9099C0CF1BCCFACF00729C9F /* RandomUpdater.m in Sources */,
+				907C46711BC95A0600363B9D /* MainController.m in Sources */,
+				90F28C151BCD751E0082BABB /* TouchUpdaterController.m in Sources */,
+				90C620331BB268E100066667 /* Curve.m in Sources */,
+				9099C0CC1BCCF9E300729C9F /* TouchUpdater.m in Sources */,
+				90F28C1C1BCD78900082BABB /* RandomUpdaterView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90C6200E1BB2680200066667 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90C620171BB2680200066667 /* PursuitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90C620191BB2680200066667 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90C620221BB2680200066667 /* PursuitUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		90C620141BB2680200066667 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 90C61FF81BB2680100066667 /* Pursuit */;
+			targetProxy = 90C620131BB2680200066667 /* PBXContainerItemProxy */;
+		};
+		90C6201F1BB2680200066667 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 90C61FF81BB2680100066667 /* Pursuit */;
+			targetProxy = 90C6201E1BB2680200066667 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		90C620051BB2680100066667 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90C620061BB2680100066667 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		90C6200A1BB2680100066667 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90C6200B1BB2680100066667 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		90C620241BB2680200066667 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		90C620251BB2680200066667 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		90C620271BB2680200066667 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Persuit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ch.othello.Pursuit;
+				PRODUCT_NAME = Pursuit;
+			};
+			name = Debug;
+		};
+		90C620281BB2680200066667 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Persuit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ch.othello.Pursuit;
+				PRODUCT_NAME = Pursuit;
+			};
+			name = Release;
+		};
+		90C6202A1BB2680200066667 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PersuitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ch.othello.PersuitTests;
+				PRODUCT_NAME = Pursuit;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pursuit.app/Pursuit";
+			};
+			name = Debug;
+		};
+		90C6202B1BB2680200066667 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PersuitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ch.othello.PersuitTests;
+				PRODUCT_NAME = Pursuit;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pursuit.app/Pursuit";
+			};
+			name = Release;
+		};
+		90C6202D1BB2680200066667 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PersuitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ch.othello.PersuitUITests;
+				PRODUCT_NAME = Pursuit;
+				TEST_TARGET_NAME = Persuit;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		90C6202E1BB2680200066667 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PersuitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ch.othello.PersuitUITests;
+				PRODUCT_NAME = Pursuit;
+				TEST_TARGET_NAME = Persuit;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		90C61FF41BB2680100066667 /* Build configuration list for PBXProject "Pursuit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90C620241BB2680200066667 /* Debug */,
+				90C620251BB2680200066667 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90C620261BB2680200066667 /* Build configuration list for PBXNativeTarget "Pursuit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90C620271BB2680200066667 /* Debug */,
+				90C620281BB2680200066667 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90C620291BB2680200066667 /* Build configuration list for PBXNativeTarget "PursuitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90C6202A1BB2680200066667 /* Debug */,
+				90C6202B1BB2680200066667 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90C6202C1BB2680200066667 /* Build configuration list for PBXNativeTarget "PursuitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90C6202D1BB2680200066667 /* Debug */,
+				90C6202E1BB2680200066667 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 90C61FF11BB2680100066667 /* Project object */;
+}
