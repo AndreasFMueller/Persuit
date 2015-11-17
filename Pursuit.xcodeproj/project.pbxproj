@@ -236,8 +236,7 @@
 				90C620161BB2680200066667 /* PursuitTests.m */,
 				90C620181BB2680200066667 /* Info.plist */,
 			);
-			name = PursuitTests;
-			path = PersuitTests;
+			path = PursuitTests;
 			sourceTree = "<group>";
 		};
 		90C620201BB2680200066667 /* PursuitUITests */ = {
@@ -246,8 +245,7 @@
 				90C620211BB2680200066667 /* PursuitUITests.m */,
 				90C620231BB2680200066667 /* Info.plist */,
 			);
-			name = PursuitUITests;
-			path = PersuitUITests;
+			path = PursuitUITests;
 			sourceTree = "<group>";
 		};
 		90F28C121BCD72870082BABB /* Lissajous */ = {
