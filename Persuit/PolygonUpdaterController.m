@@ -1,6 +1,6 @@
 //
 //  PolygonUpdaterController.m
-//  Persuit
+//  Pursuit
 //
 //  Created by Andreas Müller on 13.10.15.
 //  Copyright © 2015 Andreas Müller. All rights reserved.
@@ -25,6 +25,11 @@
     skipLabel.text = @"skip:";
     skipLabel.textAlignment = NSTextAlignmentRight;
     [updaterView addSubview: skipLabel];
+    
+    UILabel *continuousLabel = [[UILabel alloc] initWithFrame: CGRectMake(-60, 108, 110, 40)];
+    continuousLabel.text = @"continous:";
+    continuousLabel.textAlignment = NSTextAlignmentRight;
+    [updaterView addSubview: continuousLabel];
     
     UILabel *wLabel = [[UILabel alloc] initWithFrame: CGRectMake(256, 8, 50, 40)];
     wLabel.text = @"w:";
@@ -54,6 +59,11 @@
     skipSlider.value = self.polygonUpdater.skip;
     [skipSlider addTarget:self action:@selector(skipChanged:) forControlEvents:UIControlEventValueChanged];
     [updaterView addSubview: skipSlider];
+    
+    continuousSwitch = [[UISwitch alloc] initWithFrame: CGRectMake(50, 108, 200, 40)];
+    continuousSwitch.on = YES;
+    [continuousSwitch addTarget:self action:@selector(continuousChanged:) forControlEvents: UIControlEventValueChanged];
+    [updaterView addSubview: continuousSwitch];
     
     wSlider = [[UISlider alloc] initWithFrame: CGRectMake(306, 8, 200, 40)];
     wSlider.minimumValue = 0.1;
@@ -121,6 +131,13 @@
         return;
     }
     self.polygonUpdater.speed = vSlider.value;
+}
+
+- (void)continuousChanged:(id)sender {
+    if (sender != continuousSwitch) {
+        return;
+    }
+    self.polygonUpdater.continuous = continuousSwitch.isOn;
 }
 
 @end

@@ -1,6 +1,6 @@
 //
 //  ExternalViewController.m
-//  Persuit
+//  Pursuit
 //
 //  Created by Andreas Müller on 11.10.15.
 //  Copyright © 2015 Andreas Müller. All rights reserved.
@@ -11,7 +11,7 @@
 
 @implementation ExternalViewController
 
-@synthesize popupView, hasExternalMonitor, persuitView;
+@synthesize popupView, hasExternalMonitor, pursuitView;
 
 -(void)initCommon {
     self.view = nil;
@@ -30,28 +30,28 @@
     return self;
 }
 
-- (void)curves: (PersuitView*)other {
+- (void)curves: (PursuitView*)other {
     if (!hasExternalMonitor) {
         return;
     }
-    self.persuitView.target = other.target;
+    self.pursuitView.target = other.target;
     for (int i = 0; i < [other numberOfCurves]; i++) {
-        [self.persuitView addPersuer: [other curveAt: i]];
+        [self.pursuitView addPursuer: [other curveAt: i]];
     }
 }
 
-- (void)update: (PersuitView *)master {
+- (void)update: (PursuitView *)master {
     if (!hasExternalMonitor) {
         NSLog(@"no external monitor present");
         return;
     }
     if (master != masterView) {
         [self curves: master];
-        persuitView.showCats = master.showCats;
-        [persuitView setCenterCoordinates: master.coordinateCenter width: master.coordinateWidth];
+        pursuitView.showCats = master.showCats;
+        [pursuitView setCenterCoordinates: master.coordinateCenter width: master.coordinateWidth];
         masterView = master;
     }
-    [self.persuitView setNeedsDisplay];
+    [self.pursuitView setNeedsDisplay];
 }
 
 - (UIScreenMode *)getMode: (CGSize)size fromScreen: (UIScreen *)screen {
@@ -164,10 +164,10 @@
     externalWindow.hidden = NO;
     externalWindow.rootViewController = self;
 
-    persuitView = [[PersuitView alloc] init];
-    persuitView.frame = externalWindow.frame;
-    persuitView.backgroundColor = [UIColor whiteColor];
-    [externalWindow addSubview: persuitView];
+    pursuitView = [[PursuitView alloc] init];
+    pursuitView.frame = externalWindow.frame;
+    pursuitView.backgroundColor = [UIColor whiteColor];
+    [externalWindow addSubview: pursuitView];
     
     hasExternalMonitor = YES;
     return result;
@@ -175,7 +175,7 @@
 
 - (void)externalMonitor {
     NSString        *externaldevicelog = [self initializeExternalMonitor: nil];
-    if (nil == persuitView) {
+    if (nil == pursuitView) {
         UIAlertView *alert =
         [[UIAlertView alloc] initWithTitle: @"No external monitor found"
                                    message: [NSString stringWithFormat: @"This application expects an external monitor, but no monitor was found. Please connect the monitor, check your monitor cable and relaunch this application. (initialization messages: %@)", externaldevicelog]
@@ -191,22 +191,22 @@
 }
 
 - (void)setNeedsDisplay {
-    if (persuitView) {
-        [persuitView setNeedsDisplay];
+    if (pursuitView) {
+        [pursuitView setNeedsDisplay];
     }
 }
 
 - (BOOL)showCats {
-    if (persuitView) {
-        return persuitView.showCats;
+    if (pursuitView) {
+        return pursuitView.showCats;
     }
     return NO;
 }
 
 - (void)setShowCats:(BOOL)s {
-    if (persuitView) {
-        persuitView.showCats = s;
-        [persuitView setNeedsDisplay];
+    if (pursuitView) {
+        pursuitView.showCats = s;
+        [pursuitView setNeedsDisplay];
     }
 }
 

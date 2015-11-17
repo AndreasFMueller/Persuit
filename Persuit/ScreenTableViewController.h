@@ -1,6 +1,6 @@
 //
 //  ScreenTableViewController.h
-//  PDFPresenter
+//  Pursuit
 //
 //  Created by Andreas Müller on 29.01.11.
 //  Copyright 2011 Hochschule Rapperswil. All rights reserved.

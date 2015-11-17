@@ -1,6 +1,6 @@
 //
 //  RandomUpdater.m
-//  Persuit
+//  Pursuit
 //
 //  Created by Andreas Müller on 13.10.15.
 //  Copyright © 2015 Andreas Müller. All rights reserved.
@@ -14,7 +14,7 @@
 
 @synthesize sigma, where, radius;
 
-- (id)init:(Persuit *)p {
+- (id)init:(Pursuit *)p {
     self = [super init:p];
     if (self) {
         sigma = 0.2;

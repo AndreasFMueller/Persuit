@@ -1,6 +1,6 @@
 //
 //  LissajousUpdater.h
-//  Persuit
+//  Pursuit
 //
 //  Created by Andreas Müller on 13.10.15.
 //  Copyright © 2015 Andreas Müller. All rights reserved.
@@ -22,7 +22,7 @@
 @property (readwrite) double w;
 @property (readwrite) double h;
 
-- (id)init: (Persuit*)p;
+- (id)init: (Pursuit*)p;
 - (CGPoint)update: (double)t;
 
 @end

@@ -1,6 +1,6 @@
 //
-//  PersuitTests.m
-//  PersuitTests
+//  PursuitTests.m
+//  PursuitTests
 //
 //  Created by Andreas Müller on 23.09.15.
 //  Copyright © 2015 Andreas Müller. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface PersuitTests : XCTestCase
+@interface PursuitTests : XCTestCase
 
 @end
 
-@implementation PersuitTests
+@implementation PursuitTests
 
 - (void)setUp {
     [super setUp];

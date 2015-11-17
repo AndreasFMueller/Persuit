@@ -1,6 +1,6 @@
 //
 //  TouchUpdater.m
-//  Persuit
+//  Pursuit
 //
 //  Created by Andreas Müller on 13.10.15.
 //  Copyright © 2015 Andreas Müller. All rights reserved.
@@ -10,9 +10,9 @@
 
 @implementation TouchUpdater
 
-@synthesize persuitView, where;
+@synthesize pursuitView, where;
 
-- (id)init:(Persuit *)p {
+- (id)init:(Pursuit *)p {
     self = [super init: p];
     if (self) {
         where = CGPointMake(0, 0);

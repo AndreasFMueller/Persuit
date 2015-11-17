@@ -1,20 +1,20 @@
 //
-//  PersuitView.m
-//  Persuit
+//  PursuitView.m
+//  Pursuit
 //
 //  Created by Andreas Müller on 10.10.15.
 //  Copyright © 2015 Andreas Müller. All rights reserved.
 //
 
-#import "PersuitView.h"
+#import "PursuitView.h"
 
-@implementation PersuitView
+@implementation PursuitView
 
 @synthesize showCats, target, radius, coordinateCenter, coordinateWidth, touchDelegate;
 
 - (void)initCommon {
     radius = 5;
-    persuers = [[NSMutableArray alloc] init];
+    pursuers = [[NSMutableArray alloc] init];
     touchDelegate = nil;
 }
 
@@ -52,11 +52,11 @@
 }
 
 - (NSInteger)numberOfCurves {
-    return [persuers count];
+    return [pursuers count];
 }
 
 - (Curve *)curveAt: (int)i {
-    return (Curve *)[persuers objectAtIndex: i];
+    return (Curve *)[pursuers objectAtIndex: i];
 }
 
 /**
@@ -218,16 +218,16 @@
     NSLog(@"visibleRectangle = %@", NSStringFromCGRect(self.visibleRectangle));
 }
 
-- (void)addPersuer: (Curve *)curve {
+- (void)addPursuer: (Curve *)curve {
     NSLog(@"adding curve");
-    [persuers addObject: curve];
+    [pursuers addObject: curve];
 }
 
-- (void)update: (Persuit *)persuit {
-    [target addPoint: persuit.target];
+- (void)update: (Pursuit *)pursuit {
+    [target addPoint: pursuit.target];
     
-    for (int i = 0; i < [persuit numberOfPersuers]; i++) {
-        CGPoint p = [persuit stateAt:i].where;
+    for (int i = 0; i < [pursuit numberOfPursuers]; i++) {
+        CGPoint p = [pursuit stateAt:i].where;
         [[self curveAt: i] addPoint:p];
     }
     [self setNeedsDisplay];

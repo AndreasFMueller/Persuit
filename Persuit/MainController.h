@@ -1,21 +1,21 @@
 //
 //  MainController.h
-//  Persuit
+//  Pursuit
 //
 //  Created by Andreas Müller on 10.10.15.
 //  Copyright © 2015 Andreas Müller. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "PersuitView.h"
-#import "Persuit.h"
+#import "PursuitView.h"
+#import "Pursuit.h"
 #import "ExternalViewController.h"
 #import "UpdaterBase.h"
 #import "UpdaterTableViewController.h"
 #import "UpdaterSelectionDelegate.h"
 
 @interface MainController : UIViewController<UpdaterSelectionDelegate> {
-    IBOutlet PersuitView *persuitView;
+    IBOutlet PursuitView *pursuitView;
     IBOutlet UIButton   *startButton;
     IBOutlet UISlider   *velocitySlider;
     IBOutlet UISlider   *trailSlider;
@@ -25,14 +25,14 @@
     BOOL    running;
     double  starttime;
     double  lasttime;
-    Persuit *persuit;
+    Pursuit *pursuit;
     ExternalViewController  *externalViewController;
     UpdaterBase *updater;
     UpdaterView *updaterView;
 }
 
 @property (readonly) BOOL running;
-@property (readonly) Persuit *persuit;
+@property (readonly) Pursuit *pursuit;
 @property (readwrite) UpdaterBase *updater;
 
 - (IBAction)startAction:(id)sender;

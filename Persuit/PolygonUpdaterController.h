@@ -1,6 +1,6 @@
 //
 //  PolygonUpdaterController.h
-//  Persuit
+//  Pursuit
 //
 //  Created by Andreas Müller on 13.10.15.
 //  Copyright © 2015 Andreas Müller. All rights reserved.
@@ -15,6 +15,7 @@
     UISlider    *wSlider;
     UISlider    *hSlider;
     UISlider    *vSlider;
+    UISwitch    *continuousSwitch;
 }
 
 @property(readonly) PolygonUpdater *polygonUpdater;
@@ -24,5 +25,6 @@
 - (void)wChanged: (id)sender;
 - (void)hChanged: (id)sender;
 - (void)vChanged: (id)sender;
+- (void)continuousChanged: (id)sender;
 
 @end

@@ -1,6 +1,6 @@
 //
 //  LissajousUpdater.m
-//  Persuit
+//  Pursuit
 //
 //  Created by Andreas Müller on 13.10.15.
 //  Copyright © 2015 Andreas Müller. All rights reserved.
@@ -12,7 +12,7 @@
 
 @synthesize a, b, delta, w, h;
 
-- (id)init: (Persuit*)p {
+- (id)init: (Pursuit*)p {
     self = [super init: p];
     if (self) {
         a = 1.;

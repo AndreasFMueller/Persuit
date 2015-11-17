@@ -1,6 +1,6 @@
 //
 //  UpdaterBase.m
-//  Persuit
+//  Pursuit
 //
 //  Created by Andreas Müller on 13.10.15.
 //  Copyright © 2015 Andreas Müller. All rights reserved.
@@ -10,12 +10,12 @@
 
 @implementation UpdaterBase
 
-@synthesize persuit, displayName, speed;
+@synthesize pursuit, displayName, speed;
 
-- (id)init: (Persuit *)p {
+- (id)init: (Pursuit *)p {
     self = [super init];
     if (self) {
-        self.persuit = p;
+        self.pursuit = p;
         displayName = @"Base";
         speed = 1;
     }

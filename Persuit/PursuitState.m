@@ -1,14 +1,14 @@
 //
-//  PersuitState.m
-//  Persuit
+//  PursuitState.m
+//  Pursuit
 //
 //  Created by Andreas Müller on 23.09.15.
 //  Copyright © 2015 Andreas Müller. All rights reserved.
 //
 
-#import "PersuitState.h"
+#import "PursuitState.h"
 
-@implementation PersuitState
+@implementation PursuitState
 
 @synthesize strength;
 
@@ -30,7 +30,7 @@
 
 - (void)updateX: (double)x Y: (double) y DeltaT: (double)dt {
     // compute force
-    PersuitState    *change = [self forceX: x Y: y];
+    PursuitState    *change = [self forceX: x Y: y];
     position[0] += dt * (self.inertia * velocity[0] + change->position[0]) + 0.5 * dt * dt * change->velocity[0];
     position[1] += dt * (self.inertia * velocity[1] + change->position[1]) + 0.5 * dt * dt * change->velocity[1];
     velocity[0] += dt * change->velocity[0];
@@ -43,8 +43,8 @@
 
 
 // computes the "force", override in derived classes to implement different behaviour
-- (PersuitState *)forceX: (double)x Y: (double) y {
-    PersuitState    *change = [[PersuitState alloc] init];
+- (PursuitState *)forceX: (double)x Y: (double) y {
+    PursuitState    *change = [[PursuitState alloc] init];
     double  deltax = x - position[0];
     double  deltay = y - position[1];
     double  l = hypot(deltax, deltay);

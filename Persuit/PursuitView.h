@@ -1,6 +1,6 @@
 //
-//  PersuitView.h
-//  Persuit
+//  PursuitView.h
+//  Pursuit
 //
 //  Created by Andreas Müller on 10.10.15.
 //  Copyright © 2015 Andreas Müller. All rights reserved.
@@ -8,15 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import "Curve.h"
-#import "Persuit.h"
+#import "Pursuit.h"
 #import "TouchDelegate.H"
 
-@interface PersuitView : UIView {
+@interface PursuitView : UIView {
     BOOL    showCats;
     Curve   *target;
     CGPoint coordinateCenter;
     CGFloat coordinateWidth;
-    NSMutableArray  *persuers;
+    NSMutableArray  *pursuers;
     double  radius;
     NSObject<TouchDelegate>   *touchDelegate;
 }
@@ -36,7 +36,7 @@
 - (Curve *)curveAt: (int)i;
 - (CGPoint)map: (CGPoint)p;
 - (CGPoint)invmap: (CGPoint)p;
-- (void)addPersuer: (Curve *)curve;
+- (void)addPursuer: (Curve *)curve;
 
 - (void)drawCurve: (Curve *)curve withColor: (UIColor *)color;
 - (void)drawCurves;
@@ -47,7 +47,7 @@
 - (void)drawRect:(CGRect)rect;
 - (void)setCenterCoordinates: (CGPoint)center width: (double)w;
 
-- (void)update: (Persuit *)persuit;
+- (void)update: (Pursuit *)pursuit;
 
 - (void)setTrail: (int)l;
 

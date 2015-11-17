@@ -1,6 +1,6 @@
 //
 //  UpdaterTableViewController.m
-//  Persuit
+//  Pursuit
 //
 //  Created by Andreas Müller on 13.10.15.
 //  Copyright © 2015 Andreas Müller. All rights reserved.
@@ -20,7 +20,7 @@
 
 @synthesize updaterSelectionDelegate, parentView;
 
-- (id)init: (Persuit *)p {
+- (id)init: (Pursuit *)p {
     self = [super init];
     if (self) {
         updaters = [[NSMutableArray alloc] init];

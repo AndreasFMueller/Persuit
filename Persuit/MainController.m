@@ -1,6 +1,6 @@
 //
 //  MainController.m
-//  Persuit
+//  Pursuit
 //
 //  Created by Andreas Müller on 10.10.15.
 //  Copyright © 2015 Andreas Müller. All rights reserved.
@@ -15,7 +15,7 @@
 
 @implementation MainController
 
-@synthesize running, persuit, updater;
+@synthesize running, pursuit, updater;
 
 static double   now() {
     struct timeval tv;
@@ -31,32 +31,32 @@ static double   now() {
         double  t = i * step;
         [c addPoint: CGPointMake(cos(t), sin(t))];
     }
-    persuitView.target = c;
+    pursuitView.target = c;
     NSLog(@"new curve: %@", [c description]);
-    [persuitView setCenterCoordinates: CGPointMake(0, 0) width: 4];
-    persuitView.showCats = YES;
+    [pursuitView setCenterCoordinates: CGPointMake(0, 0) width: 4];
+    pursuitView.showCats = YES;
     
-    // prepare persuit state
-    persuit = [[Persuit alloc] init];
-    persuit.currentTime = 0;
-    [persuit addPersuer: [[PersuitState alloc] initX:  1 Y:  1]];
-    [persuit addPersuer: [[PersuitState alloc] initX: -1 Y:  1]];
-    [persuit addPersuer: [[PersuitState alloc] initX:  1 Y: -1]];
-    [persuit addPersuer: [[PersuitState alloc] initX: -1 Y: -1]];
+    // prepare pursuit state
+    pursuit = [[Pursuit alloc] init];
+    pursuit.currentTime = 0;
+    [pursuit addPursuer: [[PursuitState alloc] initX:  1 Y:  1]];
+    [pursuit addPursuer: [[PursuitState alloc] initX: -1 Y:  1]];
+    [pursuit addPursuer: [[PursuitState alloc] initX:  1 Y: -1]];
+    [pursuit addPursuer: [[PursuitState alloc] initX: -1 Y: -1]];
     
-    [persuit stateAt: 0].strength =  0.3;
-    [persuit stateAt: 1].strength =  0.3;
-    [persuit stateAt: 2].strength =  0.3;
-    [persuit stateAt: 3].strength =  0.3;
+    [pursuit stateAt: 0].strength =  0.3;
+    [pursuit stateAt: 1].strength =  0.3;
+    [pursuit stateAt: 2].strength =  0.3;
+    [pursuit stateAt: 3].strength =  0.3;
     
     // add four curves
     for (int i = 0; i < 4; i++) {
         Curve *catcurve = [[Curve alloc] init];
         catcurve.maxLength = 20;
-        CGPoint p = [persuit stateAt: i].where;
+        CGPoint p = [pursuit stateAt: i].where;
         NSLog(@"add point %@", NSStringFromCGPoint(p));
         [catcurve addPoint: p];
-        [persuitView addPersuer: catcurve];
+        [pursuitView addPursuer: catcurve];
     }
 }
 
@@ -65,7 +65,7 @@ static double   now() {
     NSLog(@"MainController view did load");
     // Do any additional setup after loading the view, typically from a nib.
     // set the background color
-    NSLog(@"persuitView: %@", [persuitView description]);
+    NSLog(@"pursuitView: %@", [pursuitView description]);
     running = NO;
     NSTimer *timer = [NSTimer timerWithTimeInterval: 0.05 target: self selector: @selector(update)
                                            userInfo: nil repeats: YES];
@@ -74,29 +74,29 @@ static double   now() {
     
     // create a curve add it to the view
     [self createCurve];
-    [persuitView setNeedsDisplay];
+    [pursuitView setNeedsDisplay];
     
 #if 0
     // create the updater
-    LissajousUpdater    *lu = [[LissajousUpdater alloc] init: persuit];
+    LissajousUpdater    *lu = [[LissajousUpdater alloc] init: pursuit];
     lu.a = 7;
     lu.b = 5;
     self.updater = lu;
 #endif
 
 #if 0
-    RandomUpdater   *ru = [[RandomUpdater alloc] init: persuit];
+    RandomUpdater   *ru = [[RandomUpdater alloc] init: pursuit];
     self.updater = ru;
 #endif
     
 #if 0
-    TouchUpdater    *tu = [[TouchUpdater alloc] init: persuit];
-    persuitView.touchDelegate = tu;
+    TouchUpdater    *tu = [[TouchUpdater alloc] init: pursuit];
+    pursuitView.touchDelegate = tu;
     self.updater = tu;
 #endif
     
 #if 0
-    PolygonUpdater   *pu = [[PolygonUpdater alloc] init: persuit];
+    PolygonUpdater   *pu = [[PolygonUpdater alloc] init: pursuit];
     self.updater = pu;
 #endif
     
@@ -104,15 +104,15 @@ static double   now() {
     
     // add the external view controller
     externalViewController = [[ExternalViewController alloc] init];
-    externalViewController.popupView = persuitView;
+    externalViewController.popupView = pursuitView;
     [externalViewController externalMonitor];
     
     // initialize the updater table view controller
-    updaterTableViewController = [[UpdaterTableViewController alloc] init: persuit];
+    updaterTableViewController = [[UpdaterTableViewController alloc] init: pursuit];
     updaterTableViewController.tableView = updaterTableView;
     updaterTableViewController.updaterSelectionDelegate = self;
     updaterTableViewController.parentView = self.view;
-    persuitView.touchDelegate = updaterTableViewController;
+    pursuitView.touchDelegate = updaterTableViewController;
     NSLog(@"selecting the updater");
     [updaterTableViewController selectUpdaterController: 0];
     updaterTableView.dataSource = updaterTableViewController;
@@ -136,7 +136,7 @@ static double   now() {
         new_label = @"stop";
         running = YES;
         starttime = now();
-        persuit.currentTime = 0;
+        pursuit.currentTime = 0;
     } else {
         new_label = @"start";
         running = NO;
@@ -150,11 +150,11 @@ static double   now() {
     }
     double t = now() - starttime;
     //NSLog(@"update, %.3f", t);
-    [persuit update:t point: [updater update: t]];
+    [pursuit update:t point: [updater update: t]];
     lasttime = t;
 
-    [persuitView update: persuit];
-    [externalViewController update: persuitView];
+    [pursuitView update: pursuit];
+    [externalViewController update: pursuitView];
 }
 
 - (IBAction)velocityChanged: (id)sender {
@@ -162,7 +162,7 @@ static double   now() {
         return;
     }
     double v = velocitySlider.value;
-    [persuit setVelocity: v];
+    [pursuit setVelocity: v];
 }
 
 - (void)useUpdaterController: (UpdaterController *)u {
@@ -181,16 +181,16 @@ static double   now() {
         return;
     }
     int traillength = round(trailSlider.value);
-    [persuitView setTrail: traillength];
+    [pursuitView setTrail: traillength];
 }
 
 - (IBAction)catSwitched: (id)sender {
     if (sender != catSwitch) {
         return;
     }
-    persuitView.showCats = catSwitch.on;
+    pursuitView.showCats = catSwitch.on;
     externalViewController.showCats = catSwitch.on;
-    [persuitView setNeedsDisplay];
+    [pursuitView setNeedsDisplay];
 }
 
 @end

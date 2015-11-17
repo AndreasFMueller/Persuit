@@ -1,6 +1,6 @@
 //
 //  UpdaterTableViewController.h
-//  Persuit
+//  Pursuit
 //
 //  Created by Andreas Müller on 13.10.15.
 //  Copyright © 2015 Andreas Müller. All rights reserved.
@@ -21,7 +21,7 @@
 @property (readwrite) NSObject<UpdaterSelectionDelegate>    *updaterSelectionDelegate;
 @property (readwrite) UIView *parentView;
 
-- (id)init: (Persuit *)p;
+- (id)init: (Pursuit *)p;
 - (NSInteger)numberOfUpdaterControllers;
 - (UpdaterController *)updaterControllerAt: (int)i;
 - (void)addUpdaterController: (UpdaterController *)updater;

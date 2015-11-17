@@ -1,28 +1,28 @@
 //
 //  ExternalViewController.h
-//  Persuit
+//  Pursuit
 //
 //  Created by Andreas Müller on 11.10.15.
 //  Copyright © 2015 Andreas Müller. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "PersuitView.h"
+#import "PursuitView.h"
 
 @interface ExternalViewController : UIViewController {
     UIView  *popupView;
-    PersuitView *masterView;
-    PersuitView *persuitView;
+    PursuitView *masterView;
+    PursuitView *pursuitView;
     BOOL hasExternalMonitor;
     UIWindow    *externalWindow;
 }
 
 @property (readwrite) UIView *popupView;
-@property (readonly) PersuitView *persuitView;
+@property (readonly) PursuitView *pursuitView;
 @property (readonly) BOOL hasExternalMonitor;
 @property (readwrite) BOOL showCats;
 
-- (void)update: (PersuitView *)master;
+- (void)update: (PursuitView *)master;
 
 - (void)screenConnected;
 - (void)screenDisconnected;

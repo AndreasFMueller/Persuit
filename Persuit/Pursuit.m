@@ -1,42 +1,42 @@
 //
-//  Persuit.m
-//  Persuit
+//  Pursuit.m
+//  Pursuit
 //
 //  Created by Andreas Müller on 11.10.15.
 //  Copyright © 2015 Andreas Müller. All rights reserved.
 //
 
-#import "Persuit.h"
-#import "PersuitState.h"
+#import "Pursuit.h"
+#import "PursuitState.h"
 
-@implementation Persuit
+@implementation Pursuit
 
 @synthesize currentTime, target;
 
 - (id)init {
     self = [super init];
     if (self) {
-        persuers = [[NSMutableArray alloc] init];
+        pursuers = [[NSMutableArray alloc] init];
     }
     return self;
 }
 
-- (int)numberOfPersuers {
-    return [persuers count];
+- (int)numberOfPursuers {
+    return [pursuers count];
 }
 
-- (PersuitState *)stateAt: (int)i {
-    return (PersuitState *)[persuers objectAtIndex:i];
+- (PursuitState *)stateAt: (int)i {
+    return (PursuitState *)[pursuers objectAtIndex:i];
 }
 
-- (void)addPersuer: (PersuitState *)persuer {
-    [persuers addObject: persuer];
+- (void)addPursuer: (PursuitState *)pursuer {
+    [pursuers addObject: pursuer];
 }
 
 - (void)update: (double) t x: (double)x y: (double)y {
     target = CGPointMake(x, y);
-    for (int i = 0; i < [self numberOfPersuers]; i++) {
-        PersuitState    *state = [self stateAt: i];
+    for (int i = 0; i < [self numberOfPursuers]; i++) {
+        PursuitState    *state = [self stateAt: i];
         [state updateX: x Y: y DeltaT: t - currentTime];
     }
     currentTime = t;
@@ -47,7 +47,7 @@
 }
 
 - (void)setVelocity: (double)v {
-    for (int i = 0; i < [self numberOfPersuers]; i++) {
+    for (int i = 0; i < [self numberOfPursuers]; i++) {
         [self stateAt: i].strength = v;
     }
 }

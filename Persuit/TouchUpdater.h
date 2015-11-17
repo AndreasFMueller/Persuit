@@ -1,25 +1,25 @@
 //
 //  TouchUpdater.h
-//  Persuit
+//  Pursuit
 //
 //  Created by Andreas Müller on 13.10.15.
 //  Copyright © 2015 Andreas Müller. All rights reserved.
 //
 
 #import "UpdaterBase.h"
-#import "PersuitView.h"
+#import "PursuitView.h"
 #import "UIKit/UIKit.h"
 #import "TouchDelegate.h"
 
 @interface TouchUpdater : UpdaterBase<TouchDelegate> {
-    PersuitView  *persuitView;
+    PursuitView  *pursuitView;
     CGPoint where;
 }
 
-@property (readwrite) PersuitView *persuitView;
+@property (readwrite) PursuitView *pursuitView;
 @property (readwrite) CGPoint where;
 
-- (id)init:(Persuit *)p;
+- (id)init:(Pursuit *)p;
 - (CGPoint)update:(double)t;
 
 @end
