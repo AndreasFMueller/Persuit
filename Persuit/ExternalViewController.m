@@ -42,7 +42,7 @@
 
 - (void)update: (PursuitView *)master {
     if (!hasExternalMonitor) {
-        NSLog(@"no external monitor present");
+        //NSLog(@"no external monitor present");
         return;
     }
     if (master != masterView) {

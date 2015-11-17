@@ -67,7 +67,7 @@ static double   now() {
     // set the background color
     NSLog(@"pursuitView: %@", [pursuitView description]);
     running = NO;
-    NSTimer *timer = [NSTimer timerWithTimeInterval: 0.05 target: self selector: @selector(update)
+    NSTimer *timer = [NSTimer timerWithTimeInterval: TIME_STEP target: self selector: @selector(update)
                                            userInfo: nil repeats: YES];
     [[NSRunLoop currentRunLoop] addTimer: timer forMode: NSDefaultRunLoopMode];
     starttime = now();

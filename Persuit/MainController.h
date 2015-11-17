@@ -14,6 +14,8 @@
 #import "UpdaterTableViewController.h"
 #import "UpdaterSelectionDelegate.h"
 
+#define TIME_STEP 0.025
+
 @interface MainController : UIViewController<UpdaterSelectionDelegate> {
     IBOutlet PursuitView *pursuitView;
     IBOutlet UIButton   *startButton;
