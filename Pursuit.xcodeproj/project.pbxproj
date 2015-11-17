@@ -218,8 +218,7 @@
 				9099C0C91BCCF9C300729C9F /* Updaters */,
 				9099C0D21BCD1D4B00729C9F /* TouchDelegate.h */,
 			);
-			name = Pursuit;
-			path = Persuit;
+			path = Pursuit;
 			sourceTree = "<group>";
 		};
 		90C61FFC1BB2680100066667 /* Supporting Files */ = {
